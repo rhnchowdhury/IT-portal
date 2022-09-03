@@ -35,11 +35,12 @@ const displayShow = (data) => {
     toggleSpinner(false)
 }
 
-document.getElementById('btn').addEventListener('click', function () {
+document.getElementById('button-search').addEventListener('click', function () {
     toggleSpinner(true);
 })
 
 // Loader part
+
 const toggleSpinner = isLoading => {
     const loaderSection = document.getElementById('loader')
     if (isLoading) {
