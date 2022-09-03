@@ -32,11 +32,23 @@ const displayShow = (data) => {
         `;
         containerField.appendChild(portalDiv)
     });
+    toggleSpinner(false)
 }
 
 document.getElementById('btn').addEventListener('click', function () {
-
+    toggleSpinner(true);
 })
 
 // Loader part
-display('02');
+const toggleSpinner = isLoading => {
+    const loaderSection = document.getElementById('loader')
+    if (isLoading) {
+        loaderSection.classList.remove('d-none')
+    }
+    else {
+        loaderSection.classList.add('d-none')
+    }
+}
+
+
+display('01');
