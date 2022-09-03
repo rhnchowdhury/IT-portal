@@ -39,4 +39,4 @@ document.getElementById('btn').addEventListener('click', function () {
 })
 
 // Loader part
-display('01');
+display('02');
