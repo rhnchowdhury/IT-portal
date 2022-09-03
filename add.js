@@ -4,9 +4,9 @@ const display = () => {
         .then(data => displayShow(data.data))
 }
 
-const displayShow = (dat) => {
+const displayShow = (data) => {
     const containerField = document.getElementById('test')
-    dat.forEach(element => {
+    data.forEach(element => {
         const portalDiv = document.createElement('div')
         portalDiv.classList.add('row')
         portalDiv.innerHTML = `
@@ -24,4 +24,10 @@ const displayShow = (dat) => {
         containerField.appendChild(portalDiv)
     });
 }
+
+document.getElementById('btn').addEventListener('click', function () {
+
+})
+
+// Loader part
 display()
